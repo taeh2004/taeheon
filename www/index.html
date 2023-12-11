@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko-KR" dir="ltr" >
+<head>
+  <title>태헌이의 홈페이지</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon"type="image/x-icon" href="./home.png"/>
+
+  <link href="./y.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+</head>
+
+<body>
+  <header>
+    <h1></h1>
+  </header>
+  
+  <nav>
+    <a onclick="scrollToSection('section1')">HOME</a>
+    <a onclick="scrollToSection('section2')">LIFETIME</a>
+    <a onclick="scrollToSection('section3')">PLAN</a>
+    <a onclick="scrollToSection('section4')">PHOTO</a>
+    <a onclick="scrollToSection('section5')">SNS</a>
+  </nav>
+
+  <section id="section1" class="full-height">
+    <div class="swiper-slide">
+      <div class="slide-content">
+        <img src="ME.jpg" >
+        <div class="text-container">
+          <p style="font-size: 64px;">HELLO</p>
+          <h2>My name is OH.TAE.HEON</h2>
+          <h2>I am glad to meet you</h2>
+          <h2>Have a nice day</h2>          
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  
+  <section id="section2" class="full-height">
+    
+    <h1 style="font-size: 64px;">LIFETIME</h1>
+    <h2>Place of Birth: Jeonju, Korea</h2>
+    <h2>Jeonju Seoshin Middle school</h2>
+    <h2>Korea Culinary Arts Science High school</h2>
+    <h2>Jeonbuk National University</h2>
+
+  </section>
+
+  <section id="section3" class="full-height">
+    <h1 style="font-size: 64px;">MY PLAN</h1>
+    <h2>To achieve a TOEIC score above 800 points</h2>
+    <h2>To obtain the Data Analyst Associate Certification</h2>
+    <h2>Save A LOT OF money diligently</h2>
+  </section>
+
+  <section id="section4" class="full-height">
+    <h1 style="font-size: 64px;">PHOTO</h1>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="millie.jpg">
+            <p>My Puppy</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="with banana.jpg">
+            <p>With Banana</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="islamicclothing.jpg">
+            <p>Islamic Clothing</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="Laughing.jpg">
+            <p>Laughing</p>
+          </div>
+        </div>          
+          
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    
+    
+  </section>
+
+  
+
+  <section id="section5" class="full-height">
+    <h1 style="font-size: 64px;">SNS 
+        <div class="icon-container">
+            <a href="https://www.instagram.com/taeheon331/" target="_blank" title="Instagram"><img src="./instagram.png"></a>
+            <a href="https://www.facebook.com/profile.php?id=100011919787716" target="_blank" title="Facebook"><img
+                src="./facebook.png"></a>
+            <a href="mailto:taeh2004@gmail.com" target="_blank" title="Email"><img src="./email.png"></a>
+          </div>
+                
+
+            </h1>
+
+  </section>
+
+  <script src="./x.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    });
+  </script>
+  
+
+
+</body>
+
+</html>

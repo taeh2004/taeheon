@@ -1,0 +1,145 @@
+
+body{margin: 0px;
+  padding: 0px;
+    height: 4000px;
+    position: relative;
+   
+  }
+   
+  .icon-container {
+    display: flex;
+    justify-content: center; /* 아이콘을 수평으로 가운데 정렬합니다 */
+    position: absolute;
+    bottom: 50%; /* 섹션 5의 중간에 위치하도록 합니다 */
+    left: 0;
+    transform: translate(0%, 50%); /* 중간 정렬을 위해 추가합니다 */
+    width: 100%;
+  }
+  
+  .icon-container a {
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .icon-container img {
+    display: block;
+    margin: 0 auto; /* 이미지를 컨테이너 내에서 수평으로 가운데 정렬합니다 */
+  }
+
+header {
+  z-index: 1000;
+  border-bottom: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  background-color: white;
+  padding: 8px;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+  border-bottom: 2px solid black;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+section {
+  padding: 20px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.full-height {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden; 
+  justify-content: flex-start;
+}
+
+.container {
+  width: 100%;
+  transform: translate(-100vw);
+  overflow: hidden;
+  transition: transform 0.5s; /* transition 속성은 처음에 .container의 transform 속성이 적용될 때부터 시작되어야 함 */
+}
+
+.inner {
+  
+  float: 1;
+}
+
+.inner img {
+  width: 100%;
+}
+
+#section5 {
+  padding: 20px;
+  margin-top: 60px;
+  text-align: center;
+  position: relative; /* .icon-container를 절대 위치로 지정하기 위해 상대 위치를 추가합니다 */
+}
+
+#section4 {
+  position: relative;
+}
+
+.swiper-container {
+  width: 80%; /* 조절 가능한 슬라이더의 너비 */
+  margin: 0 auto; /* 가운데 정렬을 위해 추가 */
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%; /* 섹션 4의 중간에 위치하도록 설정 */
+  transform: translateY(-50%);
+  width: 30px; /* 조절 가능한 버튼의 너비 */
+  height: 30px; /* 조절 가능한 버튼의 높이 */
+  
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  right: 10px; /* 오른쪽에 위치 */
+}
+
+.swiper-button-prev {
+  left: 10px; /* 왼쪽에 위치 */
+}
+
+.swiper-slide img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+.text-container p {
+  margin: 0; /* 기본 마진 제거 */
+}
+
+#section1 img {
+  max-width: 100px; /* 원하는 작은 이미지의 최대 너비를 지정하세요 */
+  border-radius: 5px; 
+  position: center;
+  top: 50px; /* 상단으로 이동 (다른 값으로 조절 가능) */
+  
+}
